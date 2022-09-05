@@ -548,12 +548,12 @@ export default function Swap() {
                             </>
                           )}
                         </RowBetween>
-                        <RowBetween align="center">
+                        {/* <RowBetween align="center">
                           <Label>{t('Slippage Tolerance')}</Label>
                           <Text bold color="primary">
                             {allowedSlippage / 100}%
                           </Text>
-                        </RowBetween>
+                        </RowBetween> */}
                       </AutoColumn>
                     )}
                   </AutoColumn>

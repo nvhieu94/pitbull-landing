@@ -38,7 +38,7 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['static-nft.pancakeswap.com'],
+    domains: ['static-nft.pancakeswap.com',"pitbullinu.io"],
   },
   async rewrites() {
     return [

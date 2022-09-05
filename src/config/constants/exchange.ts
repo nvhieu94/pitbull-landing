@@ -115,9 +115,15 @@ export const ONE_HUNDRED_PERCENT = new Percent('1')
 export const BASE_FEE = new Percent(JSBI.BigInt(25), BIPS_BASE)
 export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
+// // BNB
+// export const DEFAULT_INPUT_CURRENCY = 'BNB'
+// // CAKE
+// export const DEFAULT_OUTPUT_CURRENCY = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82'
+
+
 // BNB
 export const DEFAULT_INPUT_CURRENCY = 'BNB'
-// Pitbull
+// PITBULL
 export const DEFAULT_OUTPUT_CURRENCY = '0xBFF96267C5A60aa61763dD7159DA14d6DF6Da371'
 
 // Handler string is passed to Gelato to use PCS router
