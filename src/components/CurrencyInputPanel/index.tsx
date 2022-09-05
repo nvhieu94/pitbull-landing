@@ -146,11 +146,11 @@ export default function CurrencyInputPanel({
             zapStyle={zapStyle}
             className="open-currency-select-button"
             selected={!!currency}
-            onClick={() => {
-              if (!disableCurrencySelect) {
-                onPresentCurrencyModal()
-              }
-            }}
+            // onClick={() => {
+            //   if (!disableCurrencySelect) {
+            //     onPresentCurrencyModal()
+            //   }
+            // }}
           >
             <Flex alignItems="center" justifyContent="space-between">
               {pair ? (
@@ -172,7 +172,7 @@ export default function CurrencyInputPanel({
                     : currency?.symbol) || t('Select a currency')}
                 </Text>
               )}
-              {!disableCurrencySelect && <ChevronDownIcon />}
+              {/* {!disableCurrencySelect && <ChevronDownIcon />} */}
             </Flex>
           </CurrencySelectButton>
           {token && tokenAddress ? (

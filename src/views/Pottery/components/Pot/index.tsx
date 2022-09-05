@@ -104,7 +104,7 @@ const Pot: React.FC<React.PropsWithChildren> = () => {
                 <CardHeader
                   title="Pottery"
                   subTitle="Stake CAKE, Earn CAKE, Win CAKE"
-                  primarySrc="/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg"
+                  primarySrc="/images/tokens/0xBFF96267C5A60aa61763dD7159DA14d6DF6Da371.svg"
                   secondarySrc="/images/tokens/pot-icon.svg"
                 />
                 {activeTab === POT_CATEGORY.Deposit ? <Deposit /> : <Claim />}
