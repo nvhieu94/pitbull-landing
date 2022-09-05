@@ -1,9 +1,8 @@
-import {AboutUsSectionWrapper,BoxWrappSection} from './HomeStyled';
 import {Grid,Box, Typography} from '@mui/material'
-import image from 'assets/images/pitbull_section1.png';
-import section3_right from 'assets/images/section3_right.png';
-
+import section3Right from 'assets/images/section3_right.png';
 import Image from 'next/image';
+import {AboutUsSectionWrapper,BoxWrappSection} from './HomeStyled';
+
 const AbountUs = () => {
 
     return <AboutUsSectionWrapper id='about-us'>
@@ -19,7 +18,7 @@ const AbountUs = () => {
                 </BoxWrappSection>
             </Grid>
             <Grid item xs={12} md={6} xl={6}>
-                 <Image src={section3_right.src} width={740} height={477}/>
+                 <Image src={section3Right.src} width={740} height={477}/>
             </Grid>
            
             </Grid >

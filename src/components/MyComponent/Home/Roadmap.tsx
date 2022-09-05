@@ -1,15 +1,13 @@
-import {RoadmapWrapper,BoxWrappSection} from './HomeStyled';
-import {Grid,Box, Typography} from '@mui/material'
-import image from 'assets/images/pitbull_section1.png';
-import section4_pitbull from 'assets/images/section4_pitbull.png';
+import {Box, } from '@mui/material'
 import roadmap from 'assets/images/roadmap.png';
 import Image from 'next/image';
+import {RoadmapWrapper,} from './HomeStyled';
 
 const Roadmap = () => {
 
     return <RoadmapWrapper id="roadmap">
                 <Box className='road-map_img'>
-                    <img src={roadmap.src} width={2086} height={2019}/>
+                    <Image src={roadmap.src} width={2086} height={2019}/>
                 </Box>
     </RoadmapWrapper>
 }

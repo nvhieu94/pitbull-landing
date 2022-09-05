@@ -1,13 +1,8 @@
-import {CommunityTransactionWrapper,BoxWrappSection,PageSection3} from './HomeStyled';
-import {Grid,Box, Typography, Button} from '@mui/material'
-
-import bscScanImage from 'assets/images/bscScan.png';
-
-import section_6left from 'assets/images/section_6left.png';
-import section_6right from 'assets/images/section_6right.png';
-
-
+import {Grid,Box, Typography, } from '@mui/material'
+import section6Left from 'assets/images/section_6left.png';
+import section6Right from 'assets/images/section_6right.png';
 import Image from 'next/image';
+import {CommunityTransactionWrapper} from './HomeStyled';
 
 
 const CommunityTransaction = () => {
@@ -28,7 +23,7 @@ const CommunityTransaction = () => {
                         to discuss and propose ideas for Pitbull Inu
                         </Typography>
                     </Box>
-                  <Box mb={10} className='image'><Image src={section_6left.src} width={300} height={288} /></Box>
+                  <Box mb={10} className='image'><Image src={section6Left.src} width={300} height={288} /></Box>
                     
                 </Grid>
                 <Grid item xs={12} md={6} xl={6}>
@@ -43,7 +38,7 @@ const CommunityTransaction = () => {
                     cex soon, etc…
                     </Typography>
                     </Box>
-                    <Box mb={10} className='image'><Image src={section_6right.src} width={300} height={288} /></Box>
+                    <Box mb={10} className='image'><Image src={section6Right.src} width={300} height={288} /></Box>
                 </Grid>
                
             </Grid >

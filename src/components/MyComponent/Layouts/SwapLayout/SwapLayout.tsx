@@ -1,8 +1,8 @@
 import React from "react";
 import { Stack, Box } from "@mui/material";
+import { LayoutProps } from "models";
 import SwapHeader from "./SwapHeader";
 import Footer from '../../Footer';
-import { LayoutProps } from "models";
 
 const SwapLayout = (props:LayoutProps) => {
   const { children } = props;

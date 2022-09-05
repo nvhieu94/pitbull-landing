@@ -60,9 +60,9 @@ const Footer = () => {
     <FooterWrapper   >
         <Container>
           <FooterIcon>
-            <a href="https://twitter.com/PITI_PitbullInu" target={"_blank"}><TwitterIcon/></a>
-          <a href="https://t.me/PITIGlobal" target={"_blank"}><TelegramIcon /></a>
-          <a href="https://t.me/PITIAnnoucement" target={"_blank"}><CampaignIcon /></a>
+            <a href="https://twitter.com/PITI_PitbullInu" target="_blank" rel="noreferrer"><TwitterIcon/></a>
+            <a href="https://t.me/PITIGlobal" target="_blank" rel="noreferrer"><TelegramIcon /></a>
+            <a href="https://t.me/PITIAnnoucement" target="_blank" rel="noreferrer"><CampaignIcon /></a>
           </FooterIcon>
           <HeaderTitle  mt={4}> Copyright © 2022. All rights reserved by Pitbull Team</HeaderTitle>
         </Container>

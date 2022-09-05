@@ -1,17 +1,20 @@
-import {TokenomicsSectionWrapper,BoxWrappSection} from './HomeStyled';
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/alt-text */
 import {Grid,Box, Typography} from '@mui/material'
 import image from 'assets/images/pitbull_section1.png';
-import section4_pitbull from 'assets/images/tokenomics.png';
+import section4Pitbull from 'assets/images/tokenomics.png';
 import tick from 'assets/images/tick.png';
 import Image from 'next/image';
+import {TokenomicsSectionWrapper} from './HomeStyled';
 
 const Tokenomics = () => {
 
-    return <TokenomicsSectionWrapper id={'tokenomics'}>
+    return <TokenomicsSectionWrapper id='tokenomics'>
             <Grid container >
             <Grid item xs={12} md={6} xl={6}>
                 <Box className='column-right-image'>
-                    <img src={section4_pitbull.src} width={600} height={808}/>
+                    // eslint-disable-next-line jsx-a11y/alt-text
+                    <img src={section4Pitbull.src} width={600} height={808}/>
                 </Box>
             </Grid>
             <Grid item xs={12} md={6} xl={6}>

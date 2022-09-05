@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import {Box} from '@mui/material';
-import AppBar from "@mui/material/AppBar"
-import Container from "views/Predictions/components/Container";
 import MenuList from '@mui/material/MenuList';
+
 export const HeaderWrapper =styled(Box)`
     background-color: #050023;
     color: white;

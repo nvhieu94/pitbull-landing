@@ -20,14 +20,14 @@ import { NetworkModal } from 'components/NetworkModal'
 import { usePollBlockNumber } from 'state/block/hooks'
 import { usePollCoreFarmData } from 'state/farms/hooks'
 import { NextPage } from 'next'
+import { CacheProvider } from '@emotion/react'
+import { ThemeProvider, CssBaseline } from '@mui/material'
+import { theme, createEmotionCache } from "mui-custom-theme";
 import { Blocklist, Updaters } from '..'
 import { SentryErrorBoundary } from '../components/ErrorBoundary'
 import Menu from '../components/Menu'
 import Providers from '../Providers'
 import GlobalStyle from '../style/Global'
-import { CacheProvider } from '@emotion/react'
-import { ThemeProvider, CssBaseline } from '@mui/material'
-import { theme, createEmotionCache } from "mui-custom-theme";
 
 const EasterEgg = dynamic(() => import('components/EasterEgg'), { ssr: false })
 

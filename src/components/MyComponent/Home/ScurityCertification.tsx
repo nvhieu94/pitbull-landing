@@ -1,8 +1,8 @@
-import {ScurityWrapper} from './HomeStyled';
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import {Grid,Box, Typography,} from '@mui/material'
-import section5_pitbull from 'assets/images/section5_pitbull.png';
-
-import Image from 'next/image';
+import section5Pitbull from 'assets/images/section5_pitbull.png';
+import {ScurityWrapper} from './HomeStyled';
 
 
 const ScurityCertification = () => {
@@ -11,7 +11,8 @@ const ScurityCertification = () => {
         <Grid container spacing={4} justifyContent="center">
                 <Grid item xs={12} md={6} xl={6}>
                     <Box className='image_left'>
-                    <img  src={section5_pitbull.src} width={300} height={70}/>
+                    // eslint-disable-next-line jsx-a11y/alt-text, jsx-a11y/alt-text
+                    <img  src={section5Pitbull.src} width={300} height={70} />
                     </Box>
                   
                 </Grid>

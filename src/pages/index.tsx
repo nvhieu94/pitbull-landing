@@ -9,10 +9,10 @@ import { getCakeVaultAddress } from 'utils/addressHelpers'
 import { getCakeContract } from 'utils/contractHelpers'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
 import { formatEther } from '@ethersproject/units'
-import Home from '../views/Home'
-import MainLayout from '../components/MyComponent/Layouts/MainLayout'
 import { useRouter } from 'next/router';
 import {scroller} from 'react-scroll'
+import Home from '../views/Home'
+import MainLayout from '../components/MyComponent/Layouts/MainLayout'
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   const router = useRouter();

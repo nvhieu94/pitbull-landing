@@ -1,9 +1,7 @@
 import React from "react";
 import { Box, Button, Container } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
-import {HeaderWrapper, BoxNavbarWrapper,MenuListWrapper} from '../../Header/HeaderStyled';
 // import {Link} from 'react-scroll'
 import logo from 'assets/images/LOGO-PITBULL-INU-01.png';
 import Image from 'next/image'
@@ -12,6 +10,7 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 import Drawer from '@mui/material/Drawer';
 import Paper from '@mui/material/Paper';
 import Link from 'next/link'
+import {HeaderWrapper, BoxNavbarWrapper,MenuListWrapper} from '../../Header/HeaderStyled';
 import UserMenu from '../../../Menu/UserMenu';
 
 const pages = [
@@ -108,7 +107,7 @@ const SwapHeader = () => {
                 <Button onClick={()=>setIsOpenDrawer(true)}  className="btn_buy_now"><DehazeIcon /></Button>
           </Box>
           <Drawer
-            anchor={"left"}
+            anchor="left"
             open={isOpenDrawer}
            
             onClose={()=> setIsOpenDrawer(false)}
@@ -117,7 +116,7 @@ const SwapHeader = () => {
             <MenuListWrapper>
 
             {pages.map((page) => (
-                 <MenuItem divider={true} sx={{boxShadow:"none",}}>
+                 <MenuItem divider sx={{boxShadow:"none",}}>
                     <Link key={page.key} href={page.key.toString()}>
                         <Button
                             className="navbar_item"
@@ -130,7 +129,7 @@ const SwapHeader = () => {
                  </MenuItem>
                 ))
             }
-             <MenuItem divider={true} sx={{boxShadow:"none",}}>
+             <MenuItem divider sx={{boxShadow:"none",}}>
                 <UserMenu />
             </MenuItem>
             </MenuListWrapper>

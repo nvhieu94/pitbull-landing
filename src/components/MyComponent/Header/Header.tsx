@@ -1,9 +1,7 @@
 import React from "react";
 import { Box, Button, Container } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
-import {HeaderWrapper, BoxNavbarWrapper,MenuListWrapper} from './HeaderStyled';
 import {Link} from 'react-scroll'
 import logo from 'assets/images/LOGO-PITBULL-INU-01.png';
 import Image from 'next/image'
@@ -11,6 +9,7 @@ import { useRouter } from "next/router";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import Drawer from '@mui/material/Drawer';
 import Paper from '@mui/material/Paper';
+import {HeaderWrapper, BoxNavbarWrapper,MenuListWrapper} from './HeaderStyled';
 
 
 const pages = [
@@ -91,7 +90,8 @@ const Header = () => {
                     <Button
                         className="navbar_item"
                         onClick={() => {
-                          page.key == "whitepaper" ? window.location.href = "https://contact-188.gitbook.io/pitbull-inu/": page.key !== "home"? handleCloseNavMenu: router.reload();
+                          // eslint-disable-next-line no-unused-expressions
+                          page.key === "whitepaper" ? window.location.href = "https://contact-188.gitbook.io/pitbull-inu/": page.key !== "home"? handleCloseNavMenu: router.reload();
                         }}
                         sx={page.key !== "spin"?  { my: 2, }: { my: 2, color:'red', background:'red' }}
                     >
@@ -108,7 +108,7 @@ const Header = () => {
                 <Button onClick={()=>setIsOpenDrawer(true)}  className="btn_buy_now"><DehazeIcon /></Button>
           </Box>
           <Drawer
-            anchor={"left"}
+            anchor="left"
             open={isOpenDrawer}
            
             onClose={()=> setIsOpenDrawer(false)}
@@ -117,12 +117,13 @@ const Header = () => {
             <MenuListWrapper>
 
             {pages.map((page) => (
-                 <MenuItem divider={true} sx={{boxShadow:"none",}}>
+                 <MenuItem divider sx={{boxShadow:"none",}}>
                       <Link key={page.key}  to={page.key} spy smooth>
                     <Button
                         className="navbar_item"
                         onClick={() => {
-                          page.key == "whitepaper" ? window.location.href = "https://contact-188.gitbook.io/pitbull-inu/": page.key !== "home"? handleCloseNavMenu: router.reload();
+                          // eslint-disable-next-line no-unused-expressions
+                          page.key === "whitepaper" ? window.location.href = "https://contact-188.gitbook.io/pitbull-inu/": page.key !== "home"? handleCloseNavMenu: router.reload();
                         }}
                         sx={page.key !== "spin"?  { my: 2, }: { my: 2, color:'red', background:'red' }}
                     >
@@ -132,7 +133,7 @@ const Header = () => {
                  </MenuItem>
                 ))
             }
-             <MenuItem divider={true} sx={{boxShadow:"none",}}>
+             <MenuItem divider sx={{boxShadow:"none",}}>
                   <Button onClick={()=>router.push('/swap')} className="btn_buy_now">BUY NOW</Button>
                  </MenuItem>
             </MenuListWrapper>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {Box} from '@mui/material';
-import AppBar from "@mui/material/AppBar"
-import Container from "views/Predictions/components/Container";
+
 
 
 export const PageSectionFirst = styled(Box)`
