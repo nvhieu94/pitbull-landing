@@ -28,6 +28,7 @@ import RoadmapWrapper from '../../components/MyComponent/Home/Roadmap';
 import ScurityCertification from '../../components/MyComponent/Home/ScurityCertification';
 import CommunityTransaction from '../../components/MyComponent/Home/CommunityTransaction'
 import JoinOutCommunity from '../../components/MyComponent/Home/JoinOutCommunity';
+import Partner from '../../components/MyComponent/Home/Partner';
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
 
@@ -68,6 +69,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       <SectionJackpot />
       <HomeSection3 />
       <Exchanges />
+      <Partner />
       <AboutUs />
       <Tokenomics />
       <RoadmapWrapper />

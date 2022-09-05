@@ -78,6 +78,27 @@ export const ExchangesWrapper = styled(Box)`
             font-weight: 700;
           }
         }
+`
+export const PartnerWrapper = styled(Box)`
+        padding: 20px 10px 10px 10px;
+        background-color: #f2ce95;
+        .exchange-header {
+          text-align: center;
+          font-size: 52px;
+          font-weight: 600;
+        }
+        .jackpot-right {
+          text-align: center;
+          p {
+            margin: 0 0 2em;
+              font-weight: 600;
+              color:white;
+          }
+          h3 {
+            color: white;
+            font-weight: 700;
+          }
+        }
 
 `
 
@@ -107,7 +128,7 @@ export const TokenomicsSectionWrapper = styled(Box)`
           z-index: 99;
           text-align: center;
           img {
-            margin-top: -120px;
+            /* margin-top: -120px; */
             @media (max-width: 768px) {
               margin-top: 0px !important;
             }
@@ -128,7 +149,7 @@ export const TokenomicsSectionWrapper = styled(Box)`
 `
 
 export const RoadmapWrapper = styled(Box)`
-        padding: 20px 10px 10px 10px;
+        padding: 80px 10px 10px 10px;
         background-color: #ff9c00;
         color: white;
         .road-map_img {

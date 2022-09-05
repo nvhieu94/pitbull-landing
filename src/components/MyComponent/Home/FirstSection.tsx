@@ -1,7 +1,7 @@
 import {PageSectionFirst,BoxWrappSection} from './HomeStyled';
 import {Grid,Box, Typography} from '@mui/material'
-import image from 'assets/images/pitbull_section1.png';
-import section1_pibull_text from 'assets/images/section1_pibull_text.png';
+import image from 'assets/images/section1.png';
+import section1_pibull_text from 'assets/images/section1_pibull.png';
 
 import Image from 'next/image';
 const FirstSection = () => {
