@@ -471,7 +471,7 @@ export default function Swap() {
                       onCurrencySelect={handleInputSelect}
                       otherCurrency={currencies[Field.OUTPUT]}
                       id="swap-currency-input"
-                      showCommonBases
+                      // showCommonBases
                       commonBasesType={CommonBasesType.SWAP_LIMITORDER}
                     />
 
@@ -512,7 +512,7 @@ export default function Swap() {
                       onCurrencySelect={handleOutputSelect}
                       otherCurrency={currencies[Field.INPUT]}
                       id="swap-currency-output"
-                      showCommonBases
+                      // showCommonBases
                       commonBasesType={CommonBasesType.SWAP_LIMITORDER}
                     />
 
