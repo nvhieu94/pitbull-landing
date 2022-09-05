@@ -65,6 +65,7 @@ export const ExchangesWrapper = styled(Box)`
           text-align: center;
           font-size: 52px;
           font-weight: 600;
+          color: #000;
         }
         .jackpot-right {
           text-align: center;
